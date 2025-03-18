@@ -2,15 +2,16 @@
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: 5%;
   background-color: #242438;
 }
 .header h1 {
   color: #f6f5f4;
   margin: 0;
 
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 
-  padding: 5px;
+  padding: 10px;
   margin-left: 5px;
 }

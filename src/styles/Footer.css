@@ -2,6 +2,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  min-height: 5%;
 
   display: flex;
   justify-content: center;
@@ -10,7 +11,7 @@
 .footer h1 {
   color: #f6f5f4;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
   padding: 10px;
 }
