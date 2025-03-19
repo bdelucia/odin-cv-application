@@ -1,10 +1,10 @@
 import DropdownSVG from '../assets/dropdown-inactive.svg';
 import '../styles/Dropdown.css';
 
-const Dropdown = ({ id, name }) => {
+const Dropdown = ({ id, name, onClick }) => {
   return (
     <div className="dropdown" id={id}>
-      <img src={DropdownSVG} alt="" /> {name}
+      <img src={DropdownSVG} alt="" onClick={onClick} /> {name}
     </div>
   );
 };
