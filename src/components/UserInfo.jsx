@@ -26,28 +26,38 @@ const UserInfo = () => {
         name="General Info"
         onClick={() => toggleDropdown('general')}
       />
-      {openDropdowns.general && <GeneralForm />}
+      <div
+        className={`form-container ${openDropdowns.general ? 'active' : ''}`}
+      >
+        <GeneralForm />
+      </div>
 
       <Dropdown
         id="education"
         name="Education"
         onClick={() => toggleDropdown('education')}
       />
-      {openDropdowns.education && <EducationForm />}
+      <div
+        className={`form-container ${openDropdowns.education ? 'active' : ''}`}
+      ></div>
 
       <Dropdown
         id="experience"
         name="Experience"
         onClick={() => toggleDropdown('experience')}
       />
-      {openDropdowns.experience && <ExperienceForm />}
+      <div
+        className={`form-container ${openDropdowns.experience ? 'active' : ''}`}
+      ></div>
 
       <Dropdown
         id="projects"
         name="Projects"
         onClick={() => toggleDropdown('projects')}
       />
-      {openDropdowns.projects && <ProjectsForm />}
+      <div
+        className={`form-container ${openDropdowns.projects ? 'active' : ''}`}
+      ></div>
     </div>
   );
 };
