@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Dropdown from './Dropdown.jsx';
 import GeneralForm from './GeneralForm.jsx';
+import EducationForm from './EducationForm.jsx';
+import ExperienceForm from './ExperienceForm.jsx';
 import '../styles/UserInfo.css';
 
 const UserInfo = () => {
@@ -39,7 +41,9 @@ const UserInfo = () => {
       />
       <div
         className={`form-container ${openDropdowns.education ? 'active' : ''}`}
-      ></div>
+      >
+        <EducationForm />
+      </div>
 
       <Dropdown
         id="experience"
@@ -48,7 +52,9 @@ const UserInfo = () => {
       />
       <div
         className={`form-container ${openDropdowns.experience ? 'active' : ''}`}
-      ></div>
+      >
+        <ExperienceForm />
+      </div>
 
       <Dropdown
         id="projects"

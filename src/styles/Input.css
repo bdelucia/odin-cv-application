@@ -1,14 +1,42 @@
 .textInput,
-.phoneNumberInput {
+.phoneNumberInput,
+textarea {
   display: flex;
   flex-direction: column;
 
   color: #363534;
 }
 
-input {
+input,
+textarea {
   background-color: white;
+  font-family: 'Inter';
   color: #363534;
+}
+
+textarea {
+  width: 600px;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+input:hover,
+textarea:hover {
+  border-color: #b0b0b0;
 }
 
 label {

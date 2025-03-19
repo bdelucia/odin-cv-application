@@ -1,9 +1,12 @@
 .userInfo {
   background-color: var(--text-color);
   color: var(--primary-color);
-
   min-width: 600px;
   max-width: 800px;
+  max-height: 600px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-container {
@@ -14,8 +17,9 @@
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out,
     transform 0.3s ease-out;
 }
+
 .form-container.active {
-  max-height: 1000px;
+  max-height: 1000px; /* Keep your existing max-height */
   opacity: 1;
   transform: translateY(0);
 }
