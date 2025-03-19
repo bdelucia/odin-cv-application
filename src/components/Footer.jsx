@@ -1,6 +1,6 @@
 import '../styles/Footer.css';
 
-function Footer() {
+const Footer = () => {
   return (
     <>
       <div className="footer">
@@ -8,6 +8,6 @@ function Footer() {
       </div>
     </>
   );
-}
+};
 
 export default Footer;

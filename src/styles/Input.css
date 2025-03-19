@@ -1,0 +1,16 @@
+.textInput,
+.phoneNumberInput {
+  display: flex;
+  flex-direction: column;
+
+  color: #363534;
+}
+
+input {
+  background-color: white;
+  color: #363534;
+}
+
+label {
+  color: #363534;
+}
