@@ -10,7 +10,7 @@
 }
 
 .form-container {
-  max-height: 0;
+  max-height: 0px;
   overflow: hidden;
   opacity: 0;
   transform: translateY(-20px);
@@ -19,7 +19,7 @@
 }
 
 .form-container.active {
-  max-height: 1000px; /* Keep your existing max-height */
+  max-height: 90%;
   opacity: 1;
   transform: translateY(0);
 }

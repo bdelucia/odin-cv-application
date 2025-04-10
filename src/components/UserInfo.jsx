@@ -4,6 +4,7 @@ import GeneralForm from './GeneralForm.jsx';
 import EducationForm from './EducationForm.jsx';
 import ExperienceForm from './ExperienceForm.jsx';
 import ProjectForm from './ProjectsForm.jsx';
+import ProjectContainer from './ProjectsForm.jsx';
 import '../styles/UserInfo.css';
 
 const UserInfo = () => {
@@ -65,7 +66,7 @@ const UserInfo = () => {
       <div
         className={`form-container ${openDropdowns.projects ? 'active' : ''}`}
       >
-        <ProjectForm />
+        <ProjectContainer />
       </div>
     </div>
   );
