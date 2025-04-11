@@ -21,7 +21,16 @@
   cursor: pointer;
 }
 
-#addProjectBtn {
+.projectFormWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addProjectBtn,
+#deleteProjectBtn {
   width: 30px;
   margin-bottom: 1rem;
+  cursor: pointer;
 }

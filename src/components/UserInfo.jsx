@@ -3,8 +3,6 @@ import Dropdown from './Dropdown.jsx';
 import GeneralForm from './GeneralForm.jsx';
 import EducationForm from './EducationForm.jsx';
 import ExperienceForm from './ExperienceForm.jsx';
-import ProjectForm from './ProjectsForm.jsx';
-import ProjectContainer from './ProjectsForm.jsx';
 import '../styles/UserInfo.css';
 
 const UserInfo = () => {
@@ -56,17 +54,6 @@ const UserInfo = () => {
         className={`form-container ${openDropdowns.experience ? 'active' : ''}`}
       >
         <ExperienceForm />
-      </div>
-
-      <Dropdown
-        id="projects"
-        name="Projects"
-        onClick={() => toggleDropdown('projects')}
-      />
-      <div
-        className={`form-container ${openDropdowns.projects ? 'active' : ''}`}
-      >
-        <ProjectContainer />
       </div>
     </div>
   );
